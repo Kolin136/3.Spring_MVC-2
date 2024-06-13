@@ -32,7 +32,7 @@ public class WebConfig implements WebMvcConfigurer {
     filterRegistrationBean.setFilter(new LogFilter());
     filterRegistrationBean.setOrder(1);
     filterRegistrationBean.addUrlPatterns("/*");
-//    filterRegistrationBean.setDispatcherTypes(DispatcherType.REQUEST, DispatcherType.ERROR);
+    filterRegistrationBean.setDispatcherTypes(DispatcherType.REQUEST, DispatcherType.ERROR);
     return filterRegistrationBean;
   }
 }
